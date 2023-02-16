@@ -1,0 +1,26 @@
+---
+export interface Props {
+    ref: string;
+    text: string;
+}
+
+const { ref, text } = Astro.props;
+---
+
+<h1>{ref}</h1>
+<p>{text}</p>
+
+<style>
+    * {
+        font-weight: unset;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        line-height: 1.5;
+        max-width: 40ch;
+    }
+</style>
