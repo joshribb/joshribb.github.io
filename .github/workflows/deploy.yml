@@ -7,7 +7,7 @@ on:
         branches: [main]
     # Trrigger every night at 2:15 am
     schedule:
-        - cron: '15 2 * * *'
+        - cron: '15 6 * * *'
     # Allows you to run this workflow manually from the Actions tab on GitHub.
     workflow_dispatch:
 
