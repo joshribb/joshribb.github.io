@@ -1,0 +1,35 @@
+---
+export interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <title>{title}</title>
+    </head>
+    <body>
+        <slot />
+        <Fragment set:html="`<!-- Rendered: ${new Date().toISOString()} -->`" />
+    </body>
+</html>
+
+<style is:global>
+    :root {
+        color-scheme: dark light;
+        --moz-osx-font-smoothing: grayscale;
+        --webkit-font-smoothing: antialiased;
+    }
+    body {
+        font-family: system-ui, sans-serif;
+        font-weight: 200;
+        margin: 2rem;
+        text-align: center;
+    }
+</style>
