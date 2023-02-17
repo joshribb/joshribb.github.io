@@ -1,14 +1,10 @@
----
-export interface Props {
-    ref: string;
-    text: string;
-}
-
-const { ref, text } = Astro.props;
----
+<script lang="ts">
+    export let ref: string;
+    export let passage: string;
+</script>
 
 <h1>{ref}</h1>
-<p>{text}</p>
+<p>{passage}</p>
 
 <style>
     * {

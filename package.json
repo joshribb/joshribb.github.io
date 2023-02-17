@@ -10,7 +10,9 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"astro": "^2.0.12",
-		"dayjs": "^1.11.7"
+		"@astrojs/svelte": "^2.0.2",
+		"astro": "^2.0.13",
+		"dayjs": "^1.11.7",
+		"svelte": "^3.55.1"
 	}
 }

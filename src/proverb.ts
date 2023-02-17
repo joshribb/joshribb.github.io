@@ -21,6 +21,6 @@ export default () =>
         .then((res) => {
             return {
                 ref: `${res.canonical} (ESV)`,
-                text: res.passages[0],
+                passage: res.passages.join(' ').trim(),
             };
         });
